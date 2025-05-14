@@ -1,110 +1,124 @@
-        .projects-section {
-            padding: 60px 0;
-        }
+.project-card {
+    height: 100%;
+    background: white;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .nav-tabs {
-            border: none;
-            display: flex;
-            flex-direction: column;
-        }
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-        .nav-tabs .nav-link {
-            padding: 12px 5px;
-            margin-bottom: 10px;
-            border: none;
-            color: #b0b0b0;
-            font-size: 18px;
-            text-align: left;
-            border-left: 3px solid transparent;
-            border-radius: 0;
-            transition: all 0.3s ease;
-        }
+.project-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
 
-        .nav-tabs .nav-link.active {
-            color: #2947a9;
-            font-weight: 600;
-            border-left: 3px solid #2947a9;
-            background-color: transparent;
-        }
+.project-info {
+    padding: 1rem;
+    background: #2947A9;
+    color: white;
+}
 
-        .nav-tabs .nav-link:hover:not(.active) {
-            color: #6c757d;
-            border-left: 3px solid #d3d3d3;
-        }
+.project-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
 
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
+.project-location {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
 
-        .project-card {
-            border-radius: 0;
-            overflow: hidden;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
+.nav-tabs {
+    border: none;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
-        .project-img {
-            height: 240px;
-            object-fit: cover;
-            width: 100%;
-        }
+.nav-tabs .nav-link {
+    border: none;
+    border-left: 4px solid transparent;
+    color: #666;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
 
-        .project-info {
-            background-color: #2947a9;
-            color: white;
-            padding: 15px 20px;
-        }
+.nav-tabs .nav-link:hover {
+    border-left-color: #ddd;
+    color: #333;
+}
 
-        .project-title {
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
+.nav-tabs .nav-link.active {
+    border-left-color: #2947A9;
+    color: #2947A9;
+    font-weight: 500;
+    background: transparent;
+}
 
-        .project-location {
-            font-size: 14px;
-            opacity: 0.9;
-        }
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
 
-        .swiper-pagination {
-            position: relative;
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
+.nav-button {
+    padding: 0.75rem 1.5rem;
+    background: #292E3D;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
 
-        .swiper-pagination-bullet {
-            width: 10px;
-            height: 10px;
-            background-color: #d8d8d8;
-            opacity: 1;
-            margin: 0 5px !important;
-        }
+.nav-button:hover {
+    background: #1a1e2a;
+}
 
-        .swiper-pagination-bullet-active {
-            background-color: #2947a9;
-        }
+.nav-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
 
-        .navigation-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-        }
+.dot-indicators {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 0 1rem;
+}
 
-        .nav-button {
-            background-color: #292e3d;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+}
 
-        .nav-button:hover {
-            background-color: #1e2230;
-        }
+.dot.active {
+    background: #2947A9;
+}
+
+@media (max-width: 768px) {
+    .nav-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 1.5rem;
+    }
+
+    .nav-tabs .nav-link {
+        border-left: none;
+        border-bottom: 4px solid transparent;
+    }
+
+    .nav-tabs .nav-link.active {
+        border-left: none;
+        border-bottom-color: #2947A9;
+    }
+}
