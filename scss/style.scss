@@ -1,0 +1,115 @@
+//-------colors--------//
+$accent:    #F9995D;
+$primary:   #2947A9;
+$primary-light: #3559C7;
+$neutral-900: #14171F;
+$neutral-800: #292E3D;
+$neutral-700: #3D445C;
+$neutral-600: #525B7A;
+$neutral-500: #667299;
+$neutral-400: #858EAD;
+$neutral-300: #A3AAC2;
+$neutral-200: #C2C7D6;
+$neutral-100: #E0E3EB;
+$neutral-50: #F6F8F7;
+
+$custom-colors: (
+  "accent": $accent,
+  "primary": $primary,
+  "primary-light": $primary-light,
+  "neutral-900": $neutral-900,
+  "neutral-800": $neutral-800,
+  "neutral-700": $neutral-700,
+  "neutral-600": $neutral-600,
+  "neutral-500": $neutral-500,
+  "neutral-400": $neutral-400,
+  "neutral-300": $neutral-300,
+  "neutral-200": $neutral-200,
+  "neutral-100": $neutral-100,
+  "neutral-50": $neutral-50
+);
+$enable-negative-margins: true;
+
+
+//---------container widths--------//
+$custom-container-max-widths: (
+  xxl: 1216px
+);
+
+//--------font-family----------//
+$font-family-base: "Work Sans", sans-serif;
+$headings-color:  #292E3D;
+$body-color: #858EAD;
+
+$font-size-base: 1rem;
+// Font-sizes(72 60 36 24 20 18 16)//
+$h1-font-size: $font-size-base * 4.5;
+$h2-font-size: $font-size-base * 3.75;
+$h3-font-size: $font-size-base * 2.25;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base * 1.125;
+$h7-font-size: $font-size-base;
+
+$custom-font-size: (
+  7: $h7-font-size
+);
+
+//--------spacers--------//
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .5,
+  2: $spacer * 1,
+  3: $spacer * 1.25,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 5,
+
+);
+
+$position-values: (
+  0: 0,
+  5: 5%,
+  10: 10%,
+  15: 15%,
+  50: 50%,
+  70: 70px,
+  100: 100%,
+  200: 200px,
+);
+
+//--------buttons--------//
+$btn-border-radius: 1.125rem;
+$btn-padding-y: 1rem;
+$btn-padding-x: 1.25rem;
+
+$nav-link-color: #14171F;
+
+// Bootstrap imports
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Merge custom values with Bootstrap maps
+$container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
+$theme-colors: map-merge($colors, $custom-colors);
+$font-sizes: map-merge($font-sizes, $custom-font-size);
+
+// Your custom partials
+@import './header.scss';
+@import './hero-banner.scss';
+@import './service';
+@import './Free_consultation';
+@import './about_section';
+@import './service';
+
+
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+

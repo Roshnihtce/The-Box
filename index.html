@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Roshni Singh">
+  <meta name="description"
+    content="Design and develop a high-impact landing page for a commercial construction company that clearly communicates its brand, expertise, and service offerings. The landing page will serve as a digital front door—welcoming potential clients, showcasing past projects, and driving inquiries for commercial construction services.">
+
+  <title>The-Box - We Build. You Grow.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Inder&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+
+<body>
+  <!-- Header section -->
+  <header class="sticky-top bg-white shadow-sm">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./asset/images/thebox-logo.svg" alt="Logo" height="40">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Menu -->
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto align-items-lg-center fw-normal gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="d-grid align-items-center  position-relative">
+      <div class="grid-aria  z-3">
+        <div
+          class="container justify-content-between align-items-center align-items-lg-center justify-content-lg-start">
+          <h1 class="z-3 text-neutral-800 fs-1 fw-bold">Building things is our mission.
+          </h1>
+        </div>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide  carousel-fade grid-aria" data-bs-ride="carousel">
+        <div class="carousel-indicators position-relative">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="./asset/images/Hero-banner.svg" class="d-block w-100" alt="Banner 1">
+            <div class="carousel-caption bg-primary d-none d-md-block w-40 start-auto end-0 bottom-5 rounded-0">
+              <h5 class="text-white">Feature Projects</h5>
+              <p>The National University of Architecture</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item active">
+            <img src="./asset/images/Hero-banner.svg" class="d-block w-100" alt="Banner 2">
+            <div
+              class="carousel-caption bg-primary custom-carousel-card d-none d-md-block w-40 start-auto end-0 bottom-5 rounded-0">
+              <h5 class="text-white">Feature Projects</h5>
+              <p class="text-white">Modern Engineering Complex</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item active">
+            <img src="./asset/images/Hero-banner.svg" class="d-block w-100" alt="Banner 3">
+            <div class="carousel-caption bg-primary d-none d-md-block  custom-carousel-card text-white p-4 rounded-0">
+              <h5 class="text-white">Feature Projects</h5>
+              <p class="text-white">City Tech Innovation Hub</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="d-flex justify-content-between mt-3 position-absolute bottom-0 start-auto end-0">
+          <button class="btn btn-neutral-800 btn-sm rounded-0 px-6 me-1 d-none d-md-block"
+            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">← Back</button>
+          <button class="btn btn-neutral-800 btn-sm rounded-0 px-6 d-none d-md-block"
+            data-bs-target="#carouselExampleCaptions" data-bs-slide="next">Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reputation Section -->
+    <section class="py-5 bg-light ">
+      <div class="container">
+        <h3 class="mb-5 text-center fw-bold">Our Reputation</h3>
+        <div class="row g-4">
+
+          <!-- Card 1 -->
+          <div class="col-12 col-md-4">
+            <div class="card border-0 shadow-sm p-3">
+              <div class="d-flex mb-2">
+                <img src="./asset/images/icon_1.svg" alt="Best Services">
+              </div>
+              <h6>Best Services</h6>
+              <div class="para">
+                <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-4">
+            <div class="card border-0 shadow-sm p-3">
+              <div class="d-flex mb-2">
+                <img src="./asset/images/icon_1.svg" alt="Best Teams">
+              </div>
+              <h6>Best Teams</h6>
+              <p>Curcus semper tellus volutpat aliquet lacus.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-4">
+            <div class="card border-0 shadow-sm p-3">
+              <div class="d-flex mb-2">
+                <img src="./asset/images/icon_3.svg" alt="Best Designs">
+              </div>
+              <h6>Best Designs</h6>
+              <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- <section class="py-5 bg-white">
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-lg-12 position-relative my-4">
+            <img src="./asset/images/unsplash_6anudmpILw4.png" class="img-fluid rounded" alt="Person Image"
+              aria-label="Person Image"> -->
+    <!-- Overlapping Card -->
+    <!-- <div class="card position-absolute top-50 end-0 translate-middle-y bg-primary text-white shadow rounded"
+              style="max-width: 400px; margin-right: 2rem;">
+              <div class="card-body">
+                <h3 class="text-white fw-bold my-4">About us</h3>
+                <p class="card-text mb-3">For more than 30 years we have been delivering world-class construction and
+                  we’ve built many lasting relationships along the way.</p>
+                <p class="card-text mb-4">We’ve matured into an industry leader and trusted resource for those seeking
+                  quality, innovation and reliability when building in the U.S.</p>
+                <button type="button" class="btn btn-white text-primary my-4 fw-bold btn-lg">More on Our
+                  History</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <!-- About Section -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center flex-column flex-lg-row flex-nowrap">
+          <!-- Image Section -->
+          <div class="col-lg-8 col-12">
+            <img src="./asset/images/unsplash_6anudmpILw4.png" class="img-fluid"
+              alt="Person at construction site">
+          </div>
+
+          <!-- About Us -->
+          <div class="col-lg-4 col-12 ms-lg-n200">
+            <div class="bg-primary text-white shadow rounded p-3">
+              <h3 class="text-white fw-bold my-3">About us</h3>
+              <p class="card-text mb-3">
+                For more than 30 years we have been delivering world-class construction and
+                we’ve built many lasting relationships along the way.
+              </p>
+              <p class="card-text mb-4">
+                We’ve matured into an industry leader and trusted resource for those seeking
+                quality, innovation and reliability when building in the U.S.
+              </p>
+              <button type="button" class="btn btn-white text-primary mb-3 fw-bold btn-lg">
+                More on Our History
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Services section -->
+    <section class="py-4 bg-light">
+      <div class="container">
+        <h3 class="text-neutral-800 text-center fw-bold my-3">Services</h3>
+
+        <!-- first row -->
+        <div class="row">
+          <!-- Construction -->
+          <div class="col-md-4 mb-3">
+            <div class="card card-height-lg shadow border-0">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+                <img src="./asset/images/service_icon.svg" alt="Construction">
+                <hr class="my-3 w-25 border-2 border-neutral-100">
+                <h5 class="mt-2 text-primary">Construction</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Renovation -->
+          <div class="col-md-4 mb-3">
+            <div class="card card-height-lg shadow border-0">
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-center bg-primary text-center">
+                <img src="./asset/images/service_icon_2.svg" alt="Renovation">
+                <hr class="my-3 w-25 border-2 border-white">
+                <h5 class="mt-2 text-white">Renovation</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Consultation -->
+          <div class="col-md-4 mb-3">
+            <div class="card card-height-lg shadow border-0">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+                <img src="./asset/images/service_icon_3.svg" alt="Consultation">
+                <hr class="my-3 w-25 border-2 border-neutral-100">
+                <h5 class="mt-2 text-primary">Consultation</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- second row -->
+        <div class="row mt-3">
+          <!-- Repair Services -->
+          <div class="col-md-4 mb-3">
+            <div class="card card-height-lg shadow border-0">
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-center bg-primary text-center">
+                <img src="./asset/images/service_icon_4.svg" alt="Repair Services">
+                <hr class="my-3 w-25 border-2 border-white">
+                <h5 class="mt-2 text-white">Repair Services</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Architecture -->
+          <div class="col-md-4 mb-3">
+            <div class="card card-height-lg shadow border-0">
+              <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+                <img src="./asset/images/service_icon_5.svg" alt="Architecture">
+                <hr class="my-3 w-25 border-2 border-neutral-100">
+                <h5 class="mt-2 text-primary">Architecture</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Electric -->
+          <div class="col-md-4 mb-3">
+            <div class="card card-height-lg shadow border-0">
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-center bg-primary text-center">
+                <img src="./asset/images/service_icon_6.svg" alt="Electric">
+                <hr class="my-3 w-25 border-2 border-white">
+                <h5 class="mt-2 text-white">Electric</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 30 Years Experience  -->
+    <section class="py-5 bg-white">
+      <div class="container py-3">
+        <div class="row">
+          <!-- Left: Cards Section (8 columns) -->
+          <div class="col-12 col-md-8">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <div class="card shadow border-0">
+                  <div class="card-body text-center">
+                    <img src="./asset/images/illus.svg" alt="card-image">
+                    <h2 class="text-neutral-800">84</h2>
+                    <h5 class="mb-2 text-body">Happy Clients</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 mb-4">
+                <div class="card shadow border-0">
+                  <div class="card-body text-center">
+                    <img src="./asset/images/illus_2.svg" alt="card-image">
+                    <h2 class="text-neutral-800">123</h2>
+                    <h5 class="mb-2 text-body">Projects Completed</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 mb-4">
+                <div class="card shadow border-0">
+                  <div class="card-body text-center">
+                    <img src="./asset/images/illus_3.svg" alt="card-image">
+                    <h2 class="text-neutral-800">37</h2>
+                    <h5 class="mb-2 text-body">Awards Win</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 mb-4">
+                <div class="card shadow border-0">
+                  <div class="card-body text-center">
+                    <h2 class="text-neutral-800">30</h2>
+                    <h5 class="mb-2 text-body">Years in Business</h5>
+                    <img src="./asset/images/illus_4.svg" alt="card-image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Text Section (4 columns) -->
+          <div class="col-12 col-md-4 d-flex align-items-start align-items-md-center">
+            <div class="px-3 px-md-5">
+              <h2 class="text-primary fw-bold mb-5">
+                30 Years<span class="d-block">Experience</span>
+              </h2>
+              <p class="text-body mb-5">
+                Our company has been the leading provider of construction services to
+                clients throughout the USA since 1988.
+              </p>
+              <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- consultation section -->
+    <section class="py-3 consultation-section text-white d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+
+          <!-- Left Panel -->
+          <div class="col-12 col-md-8 p-0 mb-3">
+            <h3 class="fw-semibold text-white">Free consultation with exceptional quality</h3>
+            <p class="fs-6">Just one call away: +84 1102 2703</p>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+            <a href="#" class="btn btn-lg text-white border-white rounded-0">Get your consultation</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    
+    <!-- Form -->
+    <section class="p-5 bg-light">
+      <div class="container" style="max-width: 100%; max-width: 592px;">
+        <h3 class="text-center fw-bold text-neutral-800 mt-3 mb-3">What can us do for you?</h3>
+        <h5 class="text-center fw-normal text-neutral-800 mb-5">
+          We are ready to work on a project of any complexity,
+          <span class="d-block">whether it’s commercial or residential.</span>
+        </h5>
+
+        <!-- Row 1 -->
+        <div class="row mb-3">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <input type="text" class="form-control" placeholder="Your Name*" aria-label="Your name">
+          </div>
+          <div class="col-12 col-md-6">
+            <input type="email" class="form-control" placeholder="Email*" aria-label="Email">
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row mb-3">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <select class="form-select" id="autoSizingSelect">
+              <option selected>Reason for Contacting*</option>
+              <option value="1">General Inquiry</option>
+              <option value="2">Request a Quote</option>
+              <option value="3">Partnership Opportunity</option>
+              <option value="4">Project Consultation</option>
+              <option value="5">Media or Press Inquiry</option>
+              <option value="6">Feedback or Suggestion</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-6">
+            <input type="text" class="form-control" placeholder="Phone" aria-label="Phone">
+          </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Message</label>
+        </div>
+
+        <p class="small text-muted">* indicates a required field</p>
+
+        <!-- Button -->
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary btn-lg px-md-5">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Footer section -->
+    <footer>
+      <section class="p-5 bg-white">
+        <div class="container">
+          <div class="row">
+            <!-- Left Panel -->
+            <div class="col-md-6">
+              <div class="row mb-3">
+                <div class="col-sm-3 text-primary fw-bold">ADDRESS:</div>
+                <div class="col-sm-9">
+                  <p class="text-neutral-800 mb-0">6391 Elgin St. Celina, Delaware 10299</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-sm-3 text-primary fw-bold">PHONE:</div>
+                <div class="col-sm-9">
+                  <p class="text-neutral-800 mb-0">+84 1102 2703</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-sm-3 text-primary fw-bold">EMAIL:</div>
+                <div class="col-sm-9">
+                  <p class="text-neutral-800 mb-0">hello@thebox.com</p>
+                </div>
+              </div>
+
+              <div class="my-4">
+                <img src="./asset/images/thebox-logo.svg" alt="TheBox">
+              </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="col-md-6">
+              <form class="row ps-md-5">
+                <div class="col-12 mb-2">
+                  <label for="inputEmail4" class="form-label text-primary fw-bold">NEWSLETTER:</label>
+                </div>
+                <div class="col-12 d-flex flex-column flex-sm-row pe-md-5">
+                  <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0" id="inputEmail4"
+                    placeholder="Your email here" />
+                  <button type="submit" class="btn btn-accent btn-lg px-md-5 text-white fw-semibold">Submit</button>
+                </div>
+              </form>
+              <div class="d-flex align-items-center mt-4 ps-md-5 text-primary fw-bold">SOCIAL:</div>
+              <div class="d-flex align-items-center mt-3 ps-md-5">
+                <a href="https://www.facebook.com/" target="_blank" class="me-3">
+                  <img src="./asset/images/social_facebook_icon.svg" alt="Facebook" />
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" class="me-3">
+                  <img src="./asset/images/social_linkedin_icon.svg" alt="LinkedIn" />
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <img src="./asset/images/social_twitter_icon.svg" alt="Twitter" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Bottom Bar -->
+      <section class="bg-primary py-5 mt-5">
+        <div class="container text-white">
+          TheBox Company © 2022. All Rights Reserved
+        </div>
+      </section>
+    </footer>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

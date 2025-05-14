@@ -1,0 +1,17 @@
+/* Card overlays image only on large screens */
+        @media (min-width: 992px) {
+          .about-card {
+            position: absolute;
+            top: 50%;
+            right: 2rem;
+            transform: translateY(-50%);
+            max-width: 400px;
+          }
+        }
+
+ /* On smaller screens, it stays naturally below image */
+        @media (max-width: 991.98px) {
+          .about-card {
+            margin-top: 0;
+          }
+        }
